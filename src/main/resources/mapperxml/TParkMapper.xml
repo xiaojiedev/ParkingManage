@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.TParkMapper">
+  <resultMap id="BaseResultMap" type="com.example.domain.TPark">
+    <!--@mbg.generated-->
+    <!--@Table  t_park-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="park_name" jdbcType="VARCHAR" property="parkName" />
+    <result column="park_address" jdbcType="VARCHAR" property="parkAddress" />
+    <result column="park_status" jdbcType="INTEGER" property="parkStatus" />
+    <result column="free_time" jdbcType="VARCHAR" property="freeTime" />
+    <result column="class_time" jdbcType="VARCHAR" property="classTime" />
+    <result column="max_money" jdbcType="DOUBLE" property="maxMoney" />
+    <result column="play_method" jdbcType="VARCHAR" property="playMethod" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="deleted" jdbcType="INTEGER" property="deleted" />
+    <result column="park_people" jdbcType="VARCHAR" property="parkPeople" />
+    <result column="class_money" jdbcType="VARCHAR" property="classMoney" />
+    <result column="park_type" jdbcType="VARCHAR" property="parkType" />
+    <result column="people_phone" jdbcType="VARCHAR" property="peoplePhone" />
+    <result column="park_other" jdbcType="VARCHAR" property="parkOther" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, park_name, park_address, park_status, free_time, class_time, max_money, play_method, 
+    create_time, update_time, deleted, park_people, class_money, park_type, people_phone, 
+    park_other
+  </sql>
+</mapper>

@@ -1,0 +1,22 @@
+server:
+  port: 8001
+spring:
+  profiles:
+    active: mysql
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    # 处理 jackson 返回的null值 不显示出来 只显示不为null的
+    default-property-inclusion: non_null
+  main:
+    allow-bean-definition-overriding: true
+
+mybatis-plus:
+  mapper-locations: classpath:mapperxml:/**.xml
+  global-config:
+    db-config:
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true  # 开启驼峰命名法

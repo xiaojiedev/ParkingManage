@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: qwq114514
+    username: root
+    url: jdbc:mysql://10.0.0.2:3306/parkingmanage?characterEncoding=utf-8&serverTimezone=GMT&useSSL=false&allowPublicKeyRetrieval=true
+
+
+
+
+

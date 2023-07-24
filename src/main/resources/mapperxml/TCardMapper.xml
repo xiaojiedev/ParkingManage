@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.TCardMapper">
+  <resultMap id="BaseResultMap" type="com.example.domain.TCard">
+    <!--@mbg.generated-->
+    <!--@Table  t_card-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="car_num" jdbcType="VARCHAR" property="carNum" />
+    <result column="open_date" jdbcType="TIMESTAMP" property="openDate" />
+    <result column="start_date" jdbcType="TIMESTAMP" property="startDate" />
+    <result column="card_day" jdbcType="INTEGER" property="cardDay" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="park_id" jdbcType="INTEGER" property="parkId" />
+    <result column="other" jdbcType="VARCHAR" property="other" />
+    <result column="left_day" jdbcType="INTEGER" property="leftDay" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="deleted" jdbcType="INTEGER" property="deleted" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, car_num, open_date, start_date, card_day, create_time, update_time, park_id, 
+    other, left_day, `status`, deleted
+  </sql>
+</mapper>
